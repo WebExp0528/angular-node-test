@@ -1,0 +1,6 @@
+{
+  "watch": ["server"],
+  "ext": ".ts,.js",
+  "ignore": ["./server/routes.ts", "./server/swagger.json"],
+  "exec": "npx ts-node -P tsconfig.server.json ./server/index.ts"
+}

@@ -1,0 +1,44 @@
+<mat-grid-list cols="12" rowHeight="100%">
+  <mat-grid-tile [colspan]="2">
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="8">
+    <mat-grid-tile-header>
+      User Detail
+    </mat-grid-tile-header>
+    <div class="user-detail__wrapper">
+      <div>
+        <button mat-fab extended color="accent" (click)="onBack()">
+          <mat-icon>arrow_back</mat-icon>
+          Back
+        </button>
+      </div>
+      <div class="user-detail">
+        <p>
+          <span>FirstName: </span>
+          <span class="firstName">{{userInfo?.['firstName'] ?? ''}}</span>
+        </p>
+        <mat-divider />
+        <p>
+          <span>LastName: </span>
+          <span class="lastName">{{userInfo?.['lastName']?? ''}}</span>
+        </p>
+        <mat-divider />
+        <p>
+          <span>Email: </span>
+          <span class="email">{{userInfo?.['email']?? ''}}</span>
+        </p>
+        <mat-divider />
+        <p>
+          <span>Gender: </span>
+          <span class="gender">{{userInfo?.['gender']?? ''}}</span>
+        </p>
+        <p>
+          <span>Birthday: </span>
+          <span class="birthday">{{userInfo?.['birthday']?? ''}}</span>
+        </p>
+      </div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="2">
+  </mat-grid-tile>
+</mat-grid-list>

@@ -1,0 +1,12 @@
+<mat-grid-list cols="12" rowHeight="100%">
+  <mat-grid-tile [colspan]="2">
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="8">
+    <mat-grid-tile-header>User List</mat-grid-tile-header>
+    <mat-list class="user-list__wrapper">
+      <app-user-list-item *ngFor="let user of users" [user]="user"></app-user-list-item>
+    </mat-list>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="2">
+  </mat-grid-tile>
+</mat-grid-list>

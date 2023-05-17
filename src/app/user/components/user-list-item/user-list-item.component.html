@@ -1,0 +1,7 @@
+<a mat-list-item routerLink="/user/{{ user?.id ?? ''}}">
+  <div matListItemTitle class="name-wrapper">
+    <span class="firstName">{{ user?.firstName }}</span>&nbsp;
+    <span class="lastName">{{ user?.lastName }}</span>
+  </div>
+  <div class="email" matListItemLine>{{user?.email}}</div>
+</a>

@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "name": "oneblink-sdk-test",
+    "builds": [
+       { "src": "public/index.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+       { "src": "/(.*)", "dest": "public/index.js" }
+    ]
+ }
